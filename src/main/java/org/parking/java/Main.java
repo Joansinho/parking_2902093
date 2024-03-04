@@ -25,13 +25,15 @@ public class Main {
     //constructor del objeto
 
     Vehiculo carrito1 = new Vehiculo("ASD 789", TipoVehiculo.PARTICULAR);
-     carrito1.placa = "ASD 789";
-    carrito1.tipoVehiculo = TipoVehiculo.PARTICULAR;
+     carrito1.setPlaca("XS 439");
+    carrito1.setTipoVehiculo("PARTICULAR");
 
     Vehiculo carrito2 = new Vehiculo("QWE 456", TipoVehiculo.TAXI);
-    carrito2.placa = "QWE 456";
-    carrito2.tipoVehiculo = TipoVehiculo.TAXI;
+    carrito2.setPlaca("QWE 456");
+    carrito2.setTipoVehiculo(TipoVehiculo.TAXI);
 
+    Vehiculo motico= new    Vehiculo();
+    motico.setPlaca("XS 439");
     //crear un cliente
      
     Cliente cliente1 = new Cliente("Joan", "Fonctecha Leiton", 1028482746L);
@@ -85,12 +87,12 @@ public class Main {
          * -fecha hora de fin 
          * -cupo (nombre)
          */
-    System.out.println("Pago:|Placa:" + p.vehiculo.placa + "|");
-    System.out.println("|valor:" + p.valor + "|");
-    System.out.println("fecha y hora entrada :" + p.fechaHoraInicio.toString());
-    System.out.println("fecha hora fin:"+ p.fechaHoraFin.toString());
-    System.out.println("|Cupo:" + p.cupo.nombre +"|");
-    System.out.println("|codigo empleado:" + p.empleado.codigo + "|");
+    System.out.println("Pago:|Placa:" + p.getVehiculo().getPlaca() + "|" +
+    "|valor:" + p.getValor() + "|" +
+    "fecha y hora entrada :" + p.getFechaHoraInicio().toString() +
+    "fecha hora fin:"+ p.getFechaHoraFin().toString() +
+    "|Cupo:" + getCupo.nombre + "|" +
+    "|codigo empleado:" + p.empleado.codigo + "|");
 
 
 

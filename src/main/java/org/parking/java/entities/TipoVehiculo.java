@@ -6,4 +6,10 @@ CAMION,
 TAXI,
 CAMIONETA,
 PARTICULAR
+
+
+
+
 }
+
+
